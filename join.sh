@@ -1,0 +1,1 @@
+kubeadm join haproxy.example.com:6443 --token f1mdh5.jr02rns2r2jv5id0 --discovery-token-ca-cert-hash sha256:9f6bb0779915f80c7087756f665bbf52ae1b4301bb7d2ef83b9448d9a9027d52 --control-plane --certificate-key ecaef0088995c4a1e25b8b9a7395899ff689335ea259a1c5246ef9eb723ee167 --apiserver-advertise-address 10.10.10.11
