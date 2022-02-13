@@ -1,12 +1,15 @@
 # setup a "HA" kubernetes with vagrant
 
-## Odd stuff:
+## TODO:
 
 - A little while after installing cilium, vagrant lost ssh connection
-to the boxes. ssh -l root 10.10.10.X and passowrd vagrant works...
-- Resolving dns stoped working, turn off dns in NWmanager...
+to the boxes. ssh -l root 10.10.10.X and passowrd vagrant
+works... Possibly a vagrant issue.
+- The pods can't reach internet
 
 ## Create base image
+
+Edit the `Vagrantfile` and set `master-0` to use `almalinux/8`
 
 ```bash
 vagrant up master-0
