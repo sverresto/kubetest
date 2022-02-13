@@ -163,3 +163,7 @@ rm cilium-linux-amd64.tar.gz{,.sha256sum}
 
 echo "export PATH=/usr/local/bin:$PATH" >> /root/.bashrc
 echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> /root/.bashrc
+
+wget https://github.com/derailed/k9s/releases/download/v0.25.18/k9s_Linux_x86_64.tar.gz
+tar xzvfC k9s_Linux_x86_64.tar.gz /usr/local/bin/
+rm -f k9s_Linux_x86_64.tar.gz
